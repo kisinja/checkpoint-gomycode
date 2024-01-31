@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+:root {
+    --font-color: red;
+    --bg-color: #2e2f34;
+    --bg-color-2: #34353a;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+i {
+    cursor: pointer;
+    font-size: 17px;
+    color: var(--font-color);
+    font-weight: bolder;
+}
+
+main {
+    background-color: var(--bg-color);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 400px;
+    padding: 20px;
+}
+
+.col-2-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 2px solid black;
+    padding-left: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 80px;
+}
+
+.details {
+    max-width: 400px;
+}
+
+.image-container-1 {
+    position: relative;
+}
+
+.blob {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M798.5 715.5Q640 931 379 854T116 498.5q-2-278.5 261-354t421.5 140q158.5 215.5 0 431Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22red%22 d=%22M798.5 715.5Q640 931 379 854T116 498.5q-2-278.5 261-354t421.5 140q158.5 215.5 0 431Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+
+}
+
+.image {
+    position: absolute;
+    top: -90px;
+    right: -40px;
+    width: 500px;
+    height: 500px;
+    background: url(images/edited.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+
+.info h1 {
+    font-size: 45px;
+}
+
+.info span {
+    margin-left: 5px;
+}
+
+.info span::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    top: 310px;
+    left: 9.5%;
+    background: var(--font-color);
+}
+
+.socials-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: gray;
+}
+
+#border {
+    border-left: 2px solid gray;
+    padding-left: 10px;
+}
+
+.contact-me {
+    margin-top: 10px;
+    padding: 10px;
+    color: var(--font-color);
+    background: transparent;
+    border: 2px solid var(--font-color);
+    text-align: center;
+    text-decoration: none;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.details h5 {
+    color: var(--font-color);
+}
+
+.details h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.details p {
+    color: gray;
+}
+
+.learn-more {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.section-2 {
+    padding-top: 50px;
+    background: var(--bg-color-2);
+    height: 80vh;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    text-align: center;
+    width: 400px;
+}
+
+.center h3 {
+    color: var(--font-color);
+}
+
+.center h2 {
+    color: white;
+}
+
+.center p {
+    color: gray;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    color: white;
+    background: #2e2f34;
+    padding: 20px;
+    transition: transform .5s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.other {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service i {
+    font-size: 40px;
+}
+
+.service p {
+    color: gray;
+}
+
+.other span {
+    color: var(--font-color);
+    font-size: 25px;
+}
+
+.inner {
+    text-align: center;
+}
+
+.section-3 {
+    background: var(--bg-color);
+    padding-top: 50px;
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.collections {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+}
+
+.col-1 {
+    background: linear-gradient(to right, red, rgba(0, 0, 0, .5)), url(images/sample-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.col-2 {
+    background: linear-gradient(to right, red, rgba(0, 0, 0, .5)), url(images/sample-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.col-3 {
+    background: linear-gradient(to right, red, rgba(0, 0, 0, .5)), url(images/sample-3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.socials-3,
+.socials-4 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--bg-color-2);
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.social i {
+    color: white;
+}
+
+.social p {
+    color: var(--font-color);
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+}
+
+.copyright p {
+    color: gray;
+    font-size: 15px;
+}
+
+.section-copyright {
+    background: var(--bg-color);
+}
+
+.back-to-top {
+    padding: 10px;
+    border: 2px solid var(--font-color);
+    color: var(--font-color);
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+
+.back-to-top:active {
+    background: red;
+    color: black;
+}
